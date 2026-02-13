@@ -5,6 +5,7 @@ import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import Profile from './pages/Profile.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
+import Home from './pages/Home.jsx'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <BrowserRouter>
 
     <Routes>
+      <Route path="/" element={<Home />} /> 
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       
